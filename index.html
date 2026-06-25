@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Mark JS as available so reveal animations only apply with JS (content stays visible without it) -->
+  <script>document.documentElement.classList.add('js');</script>
+  <title>ד״ר יען יעקב סופר | מודיעין דיגיטלי · OSINT · SOCMINT · Dark Web</title>
+  <meta name="description" content="ד״ר יען יעקב סופר — מומחה למודיעין דיגיטלי, OSINT, SOCMINT, Dark Web וסייבר. איסוף, ניתוח והפקת מודיעין לצורכי חקירה, ניהול סיכונים וקבלת החלטות." />
+  <meta name="theme-color" content="#060910" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:title" content="ד״ר יען יעקב סופר | מודיעין דיגיטלי" />
+  <meta property="og:description" content="מומחה ל‑OSINT, SOCMINT ו‑Dark Web. הופכים מידע גלוי למודיעין שניתן לפעול לפיו." />
+  <meta property="og:url" content="https://www.yaensofer.com" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060910'/%3E%3Cpath d='M32 12 L50 22 V34 C50 45 42 51 32 54 C22 51 14 45 14 34 V22 Z' fill='none' stroke='%234cc2ff' stroke-width='3'/%3E%3Ccircle cx='32' cy='31' r='7' fill='none' stroke='%234cc2ff' stroke-width='3'/%3E%3Cline x1='37' y1='36' x2='44' y2='43' stroke='%234cc2ff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Non-blocking font load: render immediately with system fallbacks, swap in webfonts when ready -->
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+  </noscript>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="ניווט ראשי">
+      <a class="brand" href="#top" aria-label="ד״ר יען יעקב סופר — לדף הבית">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <path d="M16 3 L27 9 V17 C27 24 22 28 16 30 C10 28 5 24 5 17 V9 Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="16" cy="15.5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <line x1="18.6" y1="18.2" x2="22" y2="21.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>ד״ר יען יעקב סופר</strong>
+          <em>Cyber &amp; Digital Intelligence</em>
+        </span>
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="פתיחת תפריט">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#services">השירותים</a></li>
+        <li><a href="#method">שיטת העבודה</a></li>
+        <li><a href="#media">מן התקשורת</a></li>
+        <li><a class="nav__cta" href="#contact">צרו קשר</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__sweep" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          OSINT · SOCMINT · DARK WEB · CYBER
+        </p>
+
+        <h1 class="hero__title reveal" id="hero-title">
+          הופכים מידע גלוי
+          <span class="hero__title-accent">למודיעין שניתן לפעול לפיו.</span>
+        </h1>
+
+        <p class="hero__lead reveal">
+          ד״ר יען יעקב סופר — מרצה באוניברסיטת בר־אילן, חוקר סייבר ומומחה למודיעין
+          דיגיטלי: OSINT, SOCMINT ו‑Dark Web. איסוף, ניתוח והפקת מודיעין מתועד וברור
+          לצורכי חקירה, ניהול סיכונים ותמיכה בקבלת החלטות — עבור ארגונים, גופי ביטחון,
+          אקדמיה ומקבלי החלטות.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#contact">
+            לתיאום ייעוץ ראשוני
+            <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#services">לתחומי המומחיות</a>
+        </div>
+
+        <ul class="hero__trust reveal" aria-label="עקרונות עבודה">
+          <li><span aria-hidden="true">◆</span> מתודולוגיה אקדמית</li>
+          <li><span aria-hidden="true">◆</span> ראיות מתועדות ובנות הגנה</li>
+          <li><span aria-hidden="true">◆</span> דיסקרטיות מלאה</li>
+        </ul>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="גלילה למטה">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__intro reveal">
+          <p class="section-kicker"><span aria-hidden="true">01</span> אודות</p>
+          <h2 class="section-title" id="about-title">מחקר מודיעין במפגש שבין אקדמיה לשטח.</h2>
+          <p class="about__lead">
+            ד״ר יען יעקב סופר הוא מרצה במחלקה למדעי המידע ויישומי בינה מלאכותית
+            באוניברסיטת בר־אילן, חוקר סייבר ואיש מודיעין דיגיטלי — מומחה ל‑OSINT,
+            SOCMINT, Dark Web ו‑Cyber Threat Intelligence.
+          </p>
+          <p class="about__body">
+            עבודתו מחברת בין ידע אקדמי, מחקר יישומי וניתוח מידע דיגיטלי. במקום
+            להסתפק באיסוף מידע, הדגש הוא על אימות, הצלבה, הבנת הקשר והפקת מסקנות
+            שניתן לפעול לפיהן — בדיסקרטיות מלאה ובסטנדרט ראייתי גבוה.
+          </p>
+
+          <ul class="about__pillars">
+            <li>
+              <h3>גישה מבוססת ראיות</h3>
+              <p>כל מסקנה נשענת על מקור מאומת ומתועד — לא על השערה.</p>
+            </li>
+            <li>
+              <h3>הצלבה ואמינות מקורות</h3>
+              <p>בדיקת מהימנות, הקשר ורמת ודאות לכל פריט מידע.</p>
+            </li>
+            <li>
+              <h3>דיסקרטיות מלאה</h3>
+              <p>שמירה קפדנית על סודיות הלקוח ועל רגישות החומר.</p>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="about__panel reveal" aria-label="נתוני מומחיות">
+          <div class="stat-card">
+            <p class="stat-card__value">Ph.D</p>
+            <p class="stat-card__label">חוקר סייבר ומודיעין דיגיטלי</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__value">בר־אילן</p>
+            <p class="stat-card__label">מרצה — מדעי המידע ויישומי בינה מלאכותית</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__value">6</p>
+            <p class="stat-card__label">תחומי שירות — מודיעין, סייבר ומחקר</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__value">100%</p>
+            <p class="stat-card__label">דיסקרטיות ואבטחת מידע</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker"><span aria-hidden="true">02</span> השירותים</p>
+          <h2 class="section-title" id="services-title">תחומי מומחיות.</h2>
+          <p class="section-sub">שש יכולות שמרכיבות מערך מודיעין דיגיטלי שלם — מהמקור הגלוי ועד למרחבי הסיכון.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card__no">01</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"/><line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <h3 class="card__title">OSINT <span>חקירות מקורות גלויים</span></h3>
+            <p class="card__text">איתור, אימות והצלבת מידע ממקורות גלויים — לחקירות, בדיקות נאותות, איתור נכסים וניהול סיכונים. התוצר: תמונת מודיעין מסודרת עם רמת אמינות והמלצה לפעולה.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__no">02</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><circle cx="6" cy="7" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="7" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="17" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7.7 8.6 10.7 15M16.3 8.6 13.3 15M8.4 7h7.2" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+            </span>
+            <h3 class="card__title">SOCMINT <span>ניתוח רשתות וקהל</span></h3>
+            <p class="card__text">ניתוח רשתות חברתיות לזיהוי קהלים, נרטיבים והשפעה — פרופילים, האשטגים, קמפיינים ומנגנוני השפעה — עם ממצאים ברורים, רמות ודאות והמלצות.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__no">03</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.4 2.5 15.6 0 18M12 3c-2.5 2.4-2.5 15.6 0 18" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </span>
+            <h3 class="card__title">Dark Web <span>מודיעין דארק ווב</span></h3>
+            <p class="card__text">חקר זירות דארק ווב, פורומים ומקורות הדלפה לזיהוי איומי סייבר, חשיפות מידע וסיכוני מוניטין — מה נחשף, מי מושפע ומה נכון לעשות.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__no">04</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 3 20 6.5V12c0 5-3.4 7.7-8 9-4.6-1.3-8-4-8-9V6.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12l2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="card__title">Cyber Intelligence <span>מודיעין איומי סייבר</span></h3>
+            <p class="card__text">זיהוי וניתוח איומי סייבר, שחקני איום, חולשות ואינדיקטורים — לא רשימת התראות, אלא דוח מודיעין שמסביר את הסיכון ואת הצעדים המומלצים.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__no">05</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 4 22 9l-10 5L2 9l10-5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M6 11v4.2c0 1.4 2.7 2.4 6 2.4s6-1 6-2.4V11" fill="none" stroke="currentColor" stroke-width="1.7"/><line x1="22" y1="9" x2="22" y2="14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <h3 class="card__title">מחקר אקדמי ויישומי <span>ידע, נתונים ותובנות</span></h3>
+            <p class="card__text">הפיכת שאלות מורכבות לתהליך מחקר מסודר ומבוסס נתונים — תכנון מחקר, סקירת ספרות, ניתוח מידע דיגיטלי וכתיבה אקדמית ויישומית.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__no">06</span>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 5h16v11H4z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 20h8M12 16v4M8 9h8M8 12h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <h3 class="card__title">הרצאות והכשרות <span>סדנאות וקורסים</span></h3>
+            <p class="card__text">הרצאות והכשרות ב‑OSINT, SOCMINT, Dark Web ו‑Cyber Threat Intelligence — לאקדמיה, ארגונים, גופי ביטחון, צוותי חקירה ומקבלי החלטות.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ METHODOLOGY ============ -->
+    <section class="section method" id="method" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker"><span aria-hidden="true">03</span> שיטת העבודה</p>
+          <h2 class="section-title" id="method-title">מתודולוגיה בארבעה שלבים.</h2>
+          <p class="section-sub">תהליך מובנה שמבטיח שכל תוצר יהיה מדויק, מתועד וניתן לפעולה.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__no">01</span>
+            <h3 class="step__title">הגדרת שאלת המודיעין</h3>
+            <p class="step__text">מיקוד הצורך, תיחום גבולות החקירה והגדרת יעדי התוצר.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__no">02</span>
+            <h3 class="step__title">איסוף והצלבה</h3>
+            <p class="step__text">איסוף ממקורות מגוונים, אימות והצלבת מידע בין מקורות בלתי תלויים.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__no">03</span>
+            <h3 class="step__title">ניתוח והערכת אמינות</h3>
+            <p class="step__text">סינון, הקשר, הערכת מהימנות מקורות וקביעת רמת ודאות.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__no">04</span>
+            <h3 class="step__title">תובנות והמלצות פעולה</h3>
+            <p class="step__text">תוצר מתועד, ברור וקריא — עם המלצות פעולה מעשיות.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ MEDIA ============ -->
+    <section class="section media" id="media" aria-labelledby="media-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker"><span aria-hidden="true">04</span> מן התקשורת</p>
+          <h2 class="section-title" id="media-title">אולפנים, שידורים והרצאות.</h2>
+          <p class="section-sub">תובנות סייבר, מודיעין ובינה מלאכותית שהוצגו בפני קהלים מקצועיים — בשיתוף לשכת עורכי הדין, מחוז מרכז.</p>
+        </div>
+
+        <div class="media__grid">
+          <a class="media-card reveal" href="https://merkazbar.org.il/video/%D7%A9%D7%90%D7%92%D7%AA-%D7%94%D7%90%D7%A8%D7%99-%D7%A0%D7%99%D7%AA%D7%95%D7%97-%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA-%D7%92%D7%95%D7%A8%D7%9E%D7%99-%D7%98%D7%A8%D7%95%D7%A8-%D7%90%D7%99%D7%A1%D7%9C/" target="_blank" rel="noopener">
+            <span class="media-card__tag">אולפן</span>
+            <h3 class="media-card__title">שאגת הארי</h3>
+            <p class="media-card__desc">ניתוח פעילות גורמי טרור איסלאמיים ברשתות חברתיות בעזרת בינה מלאכותית.</p>
+            <p class="media-card__meta">לשכת עורכי הדין · מחוז מרכז <span class="media-card__ext" aria-hidden="true">↗</span></p>
+          </a>
+          <a class="media-card reveal" href="https://merkazbar.org.il/video/%D7%94%D7%90%D7%95%D7%9C%D7%A4%D7%9F-%D7%94%D7%9E%D7%A8%D7%9B%D7%96%D7%99-%D7%9E%D7%AA%D7%A7%D7%A4%D7%95%D7%AA-%D7%A1%D7%99%D7%99%D7%91%D7%A8-%D7%95%D7%93%D7%A8%D7%9B%D7%99-%D7%94%D7%AA%D7%92%D7%95/" target="_blank" rel="noopener">
+            <span class="media-card__tag">אולפן</span>
+            <h3 class="media-card__title">האולפן המרכזי</h3>
+            <p class="media-card__desc">מתקפות סייבר ודרכי התגוננות בעת מלחמה.</p>
+            <p class="media-card__meta">לשכת עורכי הדין · מחוז מרכז <span class="media-card__ext" aria-hidden="true">↗</span></p>
+          </a>
+          <a class="media-card reveal" href="https://merkazbar.org.il/product/%D7%A2%D6%B8%D7%9D-%D7%9B%D6%B0%D6%BC%D7%9C%D6%B8%D7%91%D6%B4%D7%99%D7%90-%D7%A9%D7%99%D7%93%D7%95%D7%A8-%D7%96%D7%95%D7%9D-%D7%9E%D7%99%D7%95%D7%97%D7%93-%D7%9E%D7%A2%D7%95%D7%A8%D7%91%D7%95/" target="_blank" rel="noopener">
+            <span class="media-card__tag">שידור זום</span>
+            <h3 class="media-card__title">עם כְּלָבִיא</h3>
+            <p class="media-card__desc">שידור זום מיוחד בנושא מעורבות הסייבר במלחמה.</p>
+            <p class="media-card__meta">לשכת עורכי הדין · מחוז מרכז <span class="media-card__ext" aria-hidden="true">↗</span></p>
+          </a>
+          <article class="media-card media-card--static reveal">
+            <span class="media-card__tag">הרצאות</span>
+            <h3 class="media-card__title">הרצאות בלשכת עורכי הדין</h3>
+            <p class="media-card__desc">הרצאות בנושאי סייבר, משפט, בינה מלאכותית ומודיעין דיגיטלי.</p>
+            <p class="media-card__meta">לשכת עורכי הדין · מחוז מרכז</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__intro reveal">
+          <p class="section-kicker"><span aria-hidden="true">05</span> צרו קשר</p>
+          <h2 class="section-title" id="contact-title">נתחיל בשיחה דיסקרטית.</h2>
+          <p class="contact__lead">
+            ספרו לי בקצרה על הצורך — חקירה, בדיקת נאותות, ניהול סיכון או הרצאה.
+            אחזור אליכם לתיאום ייעוץ ראשוני, בסודיות מלאה.
+          </p>
+
+          <ul class="contact__details">
+            <li>
+              <span class="contact__det-label">דוא״ל</span>
+              <a href="mailto:contact@yaensofer.com">contact@yaensofer.com</a>
+            </li>
+            <li>
+              <span class="contact__det-label">זמינות</span>
+              <span>ייעוץ בתיאום מראש · ימים א׳–ה׳</span>
+            </li>
+            <li>
+              <span class="contact__det-label">פרופיל אקדמי</span>
+              <a href="https://is.biu.ac.il/node/4742" target="_blank" rel="noopener">אוניברסיטת בר־אילן ↗</a>
+            </li>
+            <li>
+              <span class="contact__det-label">דיסקרטיות</span>
+              <span>כל פנייה מטופלת בסודיות מלאה</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">שם מלא</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="השם שלכם" />
+          </div>
+          <div class="field">
+            <label for="email">דוא״ל</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com" dir="ltr" />
+          </div>
+          <div class="field">
+            <label for="topic">נושא הפנייה</label>
+            <select id="topic" name="topic">
+              <option value="OSINT / חקירה">OSINT / חקירה</option>
+              <option value="SOCMINT / רשתות">SOCMINT / ניתוח רשתות</option>
+              <option value="Dark Web">Dark Web</option>
+              <option value="Cyber Intelligence">מודיעין סייבר</option>
+              <option value="הרצאה / הדרכה">הרצאה / הדרכה</option>
+              <option value="אחר">אחר</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">פרטים</label>
+            <textarea id="message" name="message" rows="4" required placeholder="כמה משפטים על הצורך..."></textarea>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">שליחת פנייה</button>
+          <p class="contact__form-note" id="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>ד״ר יען יעקב סופר</strong>
+        <span>Cyber &amp; Digital Intelligence · OSINT · SOCMINT · Dark Web</span>
+      </div>
+      <nav class="site-footer__nav" aria-label="ניווט תחתון">
+        <a href="#about">אודות</a>
+        <a href="#services">השירותים</a>
+        <a href="#method">שיטת העבודה</a>
+        <a href="#contact">צרו קשר</a>
+      </nav>
+      <div class="site-footer__social" aria-label="פרופילים וקישורים">
+        <a href="https://www.facebook.com/yaen.sofer" target="_blank" rel="noopener" aria-label="פייסבוק">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 8.5h2.2V5.6c-.4 0-1.6-.1-2.9-.1-2.9 0-4.5 1.6-4.5 4.6v2.1H6v3.1h2.8V22h3.4v-6.7h2.7l.4-3.1h-3.1v-1.8c0-.9.3-1.6 1.4-1.6Z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://scholar.google.co.uk/citations?user=BWdiehEAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3 1.5 8.5 12 14l8.5-4.4V15h1.5V8.5L12 3Z" fill="currentColor"/><path d="M5.5 12.2V15c0 1.7 2.9 3.2 6.5 3.2s6.5-1.5 6.5-3.2v-2.8L12 15.6l-6.5-3.4Z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://is.biu.ac.il/node/4742" target="_blank" rel="noopener" aria-label="פרופיל אקדמי — אוניברסיטת בר־אילן">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 20V9l8-4 8 4v11M4 20h16M9 20v-5h6v5M12 9.5h.01" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <p class="site-footer__copy">© <span id="year">2026</span> ד״ר יען יעקב סופר. כל הזכויות שמורות.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
