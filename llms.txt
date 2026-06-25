@@ -1,0 +1,32 @@
+# Dr. Yaen Yaacov Sofer — Cyber & Digital Intelligence
+
+> ד״ר יען יעקב סופר (Dr. Yaen Yaacov Sofer) is a cyber researcher and digital intelligence expert, and a lecturer at Bar-Ilan University (Department of Information Science & Applied AI). He specializes in OSINT, SOCMINT, Dark Web Intelligence, and Cyber Threat Intelligence — turning open digital information into verified, documented, actionable intelligence for investigations, risk management, and decision-making. The site is in Hebrew.
+
+## About
+- Name: Dr. Yaen Yaacov Sofer (Hebrew: ד״ר יען יעקב סופר)
+- Credential: Ph.D.
+- Role: Cyber researcher; digital intelligence expert; lecturer at Bar-Ilan University, Department of Information Science & Applied Artificial Intelligence
+- Core expertise: OSINT (open-source intelligence), SOCMINT (social media intelligence), Dark Web Intelligence, Cyber Threat Intelligence, audience profiling, intelligence targeting, user-behavior analysis, digital research methodology
+- Approach: evidence-based, source-verified, cross-referenced, fully confidential, high evidentiary standard
+- Audience: organizations, security and enforcement bodies, academia and students, investigation/cyber/intelligence teams, managers and decision-makers
+- Contact email: contact@yaensofer.com
+
+## Services
+- OSINT investigations — locating, verifying and cross-referencing open-source information for investigations, due diligence, asset tracing, and risk management.
+- SOCMINT analysis — social-network and audience analysis: profiles, discourse, narratives, campaigns, influence mapping.
+- Dark Web Intelligence — research of deep/dark web spaces to identify exposures, leaks, threats, and risk indicators (lawfully and ethically).
+- Cyber Threat Intelligence — threat actors, infrastructures, indicators, vulnerabilities, and business-risk assessment.
+- Academic & Applied Research — research design, literature review, data analysis, source-credibility assessment, academic and applied reports.
+- Lectures & Training — courses, workshops and lectures on OSINT, SOCMINT, Dark Web and Cyber Threat Intelligence.
+
+## Methodology
+1. Define the intelligence question and scope.
+2. Collect from diverse sources; verify and cross-reference.
+3. Analyze, contextualize, assess source reliability and confidence level.
+4. Deliver a documented, clear report with actionable recommendations.
+
+## Links
+- Website: https://omerliberman-a11y.github.io/yaensofer-site/
+- Facebook: https://www.facebook.com/yaen.sofer
+- Google Scholar: https://scholar.google.co.uk/citations?user=BWdiehEAAAAJ
+- Bar-Ilan University faculty profile: https://is.biu.ac.il/node/4742

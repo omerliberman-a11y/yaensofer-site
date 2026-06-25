@@ -509,6 +509,38 @@ button { font: inherit; cursor: pointer; }
 .media-card--static:hover { transform: none; border-color: var(--border); }
 
 /* ===============================================================
+   FAQ
+   =============================================================== */
+.faq { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%); }
+.faq__list { display: grid; gap: 0.8rem; max-width: 880px; }
+.faq__item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.015);
+  transition: border-color var(--dur) var(--ease);
+}
+.faq__item[open] { border-color: var(--border-strong); }
+.faq__item summary {
+  list-style: none; cursor: pointer;
+  padding: 1.1rem 1.3rem;
+  font-weight: 600; font-size: 1.05rem; color: var(--text);
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  transition: color 0.2s;
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "+"; flex: none;
+  color: var(--accent); font-family: var(--font-mono); font-size: 1.5rem; line-height: 1;
+  transition: transform var(--dur) var(--ease);
+}
+.faq__item[open] summary::after { transform: rotate(45deg); }
+.faq__item summary:hover { color: var(--accent); }
+.faq__item summary:focus-visible { box-shadow: var(--ring); border-radius: 6px; }
+.faq__answer { padding: 0 1.3rem 1.2rem; color: var(--muted); }
+.faq__answer p { max-width: 72ch; }
+.faq__answer a { color: var(--accent); }
+
+/* ===============================================================
    CONTACT
    =============================================================== */
 .contact { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%); }
