@@ -233,7 +233,35 @@ button { font: inherit; cursor: pointer; }
   overflow: hidden;
   isolation: isolate;
 }
-.hero__inner { position: relative; z-index: 2; max-width: 940px; }
+.hero__inner {
+  position: relative; z-index: 2;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(1.5rem, 1rem + 4vw, 4.5rem);
+  align-items: center;
+}
+.hero__content { max-width: 660px; }
+
+.hero__portrait { position: relative; justify-self: center; align-self: end; width: 100%; max-width: 420px; }
+.hero__portrait picture { display: block; }
+.hero__portrait img {
+  position: relative; z-index: 1;
+  width: 100%; height: auto;
+  filter: drop-shadow(0 28px 44px rgba(0, 0, 0, 0.6));
+}
+/* Cyan/indigo glow behind the cutout to ground it on the dark hero */
+.hero__portrait::before {
+  content: ""; position: absolute; z-index: 0;
+  inset-block-start: 4%; inset-inline: 2%; inset-block-end: 7%;
+  background: radial-gradient(56% 50% at 50% 40%, rgba(76, 194, 255, 0.30), rgba(124, 140, 255, 0.13) 46%, transparent 72%);
+  filter: blur(18px);
+}
+/* Soft contact shadow at the base */
+.hero__portrait::after {
+  content: ""; position: absolute; z-index: 0;
+  inset-inline: 14%; inset-block-end: 0; height: 34px;
+  background: radial-gradient(50% 100% at 50% 0%, rgba(2, 6, 14, 0.7), transparent 72%);
+}
 
 /* layered background */
 .hero__grid {
@@ -568,6 +596,11 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 920px) {
   .about__grid, .contact__grid { grid-template-columns: 1fr; }
   .about__panel { position: static; grid-template-columns: 1fr 1fr; }
+
+  .hero { min-height: auto; }
+  .hero__inner { grid-template-columns: 1fr; gap: 1.8rem; }
+  .hero__content { max-width: none; }
+  .hero__portrait { order: -1; align-self: auto; max-width: 240px; }
 }
 
 @media (max-width: 760px) {
