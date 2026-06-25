@@ -1,5 +1,7 @@
 # Dr. Yaen Yaacov Sofer — Cyber & Digital Intelligence
 
+> Last updated: 2026-06-25
+
 > ד״ר יען יעקב סופר (Dr. Yaen Yaacov Sofer) is a cyber researcher and digital intelligence expert, and a lecturer at Bar-Ilan University (Department of Information Science & Applied AI). He specializes in OSINT, SOCMINT, Dark Web Intelligence, and Cyber Threat Intelligence — turning open digital information into verified, documented, actionable intelligence for investigations, risk management, and decision-making. The site is in Hebrew.
 
 ## About
@@ -24,6 +26,12 @@
 2. Collect from diverse sources; verify and cross-reference.
 3. Analyze, contextualize, assess source reliability and confidence level.
 4. Deliver a documented, clear report with actionable recommendations.
+
+## Media / Talks
+Appearances with the Israel Bar Association, Central District (לשכת עורכי הדין — מחוז מרכז):
+- "שאגת הארי" — analysis of Islamist terror activity on social networks using AI: https://merkazbar.org.il/video/%D7%A9%D7%90%D7%92%D7%AA-%D7%94%D7%90%D7%A8%D7%99-%D7%A0%D7%99%D7%AA%D7%95%D7%97-%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%AA-%D7%92%D7%95%D7%A8%D7%9E%D7%99-%D7%98%D7%A8%D7%95%D7%A8-%D7%90%D7%99%D7%A1%D7%9C/
+- "האולפן המרכזי" — cyber attacks and defense during wartime: https://merkazbar.org.il/video/%D7%94%D7%90%D7%95%D7%9C%D7%A4%D7%9F-%D7%94%D7%9E%D7%A8%D7%9B%D7%96%D7%99-%D7%9E%D7%AA%D7%A7%D7%A4%D7%95%D7%AA-%D7%A1%D7%99%D7%99%D7%91%D7%A8-%D7%95%D7%93%D7%A8%D7%9B%D7%99-%D7%94%D7%AA%D7%92%D7%95/
+- "עם כלביא" — Zoom broadcast on cyber involvement in wartime: https://merkazbar.org.il/product/%D7%A2%D6%B8%D7%9D-%D7%9B%D6%B0%D6%BC%D7%9C%D6%B8%D7%91%D6%B4%D7%99%D7%90-%D7%A9%D7%99%D7%93%D7%95%D7%A8-%D7%96%D7%95%D7%9D-%D7%9E%D7%99%D7%95%D7%97%D7%93-%D7%9E%D7%A2%D7%95%D7%A8%D7%91%D7%95/
 
 ## Links
 - Website: https://omerliberman-a11y.github.io/yaensofer-site/

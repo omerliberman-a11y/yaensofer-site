@@ -313,6 +313,15 @@ button { font: inherit; cursor: pointer; }
   line-height: 1.04;
   letter-spacing: -0.022em;
 }
+.hero__title-name {
+  display: block;
+  font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.18rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--accent);
+  margin-block-end: 1.1rem;
+  line-height: 1.4;
+}
 .hero__title-accent {
   display: block;
   background: linear-gradient(110deg, #bfe4ff 0%, #4cc2ff 45%, #7c8cff 100%);
@@ -613,6 +622,7 @@ button { font: inherit; cursor: pointer; }
 }
 .site-footer__social a:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); transform: translateY(-3px); }
 .site-footer__copy { color: var(--faint); font-size: 0.85rem; width: 100%; padding-block-start: 1.4rem; border-block-start: 1px solid var(--border); }
+.site-footer__updated { font-family: var(--font-mono); font-size: 0.78rem; opacity: 0.8; }
 
 /* ===============================================================
    Reveal-on-scroll
